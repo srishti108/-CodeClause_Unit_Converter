@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 400px;
+    width: 660px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgb(6, 76, 94);
+
+}
+h1{
+    margin:8px;
+    text-align: center;
+}
+ 
+.container .input{
+    margin:20px;
+    padding:10px;
+    display: flex;
+
+}
+input{
+    background: rgb(21, 149, 153);
+    width: 100px;
+    height: 25px;
+    color: black;
+    padding: 5px;
+    margin-left: 10px;
+    font-weight: 14px;
+}
+.placeholder-text::placeholder{
+    color: rgb(6, 0, 0);
+}
+label{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+p{
+margin-right: 20px;
+margin-left: 12px;
+display: flex;
+font-size: 20px;
+}
+span{
+    display: block;
+    height:20px;
+    width: 100px;
+    padding: 4px;
+    margin-left: 20px;
+    background: rgb(21, 149, 153);
+    border: 3px solid rgb(21, 149, 153);
+}

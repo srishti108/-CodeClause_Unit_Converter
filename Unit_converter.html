@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Unit_converter.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+    <h1>Unit Converter</h1>
+
+<!-- <p>Type a value in the cm field to convert the value to Meters:</p> -->
+<div class="input">
+<p>
+   
+   
+  <input id="inputcmToMtr" type="number" placeholder="CM" oninput="LengthConverterTomtr(this.value)" onchange="LengthConverterTomtr(this.value)" class="placeholder-text">
+  <label>centimeters  =</label>
+</p>
+ <span id="outputMeters"></span><p>   Meters:</p>
+</div>
+
+<!--*********************Kelometer********************-->
+<div class="input">
+
+<input id="inputcmTokm" type="number" placeholder="CM" oninput="LengthConverterToKm(this.value)" onchange="LengthConverterToKm(this.value)" class="placeholder-text">
+<label>centimeter =</label>
+</p>
+<span id="outputKilometers"></span><p>Kilometers </p>
+</div>
+ <!--****************KM To Meter*************-->
+ <div class="input">
+ <p>
+  
+  <input id="inputKilometers" type="number" placeholder="KM" oninput="LengthConverterKmTomtr(this.value)" onchange="LengthConverterKmTomtr(this.value)" class="placeholder-text">
+  <label>Kilometers  =</label></p>
+ <span id="outputkmToMeters"></span><p>Meters:</p>
+</div>
+<!--*******************Meters To km**********************-->
+<div class="input">
+<p>
+  
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConvertermtrTokm(this.value)" onchange="LengthConvertermtrTokm(this.value)" class="placeholder-text">
+  <label>Meters =</label></p>
+ <span id="outputMetersTokm"></span><p>Kilometers </p>
+</div>
+</div>
+</div>
+
+<script>
+ function LengthConverterTomtr(cm) {
+    
+  var meters = cm / 100; // Convert centimeters to meters
+
+  // Display the result in an element with ID "outputMeters"
+  var outputElement = document.getElementById("outputMeters");
+  outputElement.innerHTML = meters;
+ }
+function LengthConverterToKm(cm) {
+  var Kilometers=cm/100000;
+  var outputElement = document.getElementById("outputKilometers");
+  outputElement.innerHTML = Kilometers;
+}
+function LengthConverterKmTomtr(km){
+  var meters=km*1000;
+  var outputElement=document.getElementById("outputkmToMeters");
+  outputElement.innerHTML=meters;
+}
+function LengthConvertermtrTokm(m){
+  var Killometers=m/1000;
+  var outputElement=document.getElementById("outputMetersTokm");
+  outputElement.innerHTML=Killometers;
+}
+</script>
+</body>
+</html>
